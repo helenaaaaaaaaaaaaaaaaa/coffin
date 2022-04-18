@@ -1809,10 +1809,10 @@ $(document).ready(function () {
 	}
 
 	var vivuses=[
-		new Vivus('draw-test-1', { duration: 200, file: 'images/draw-test-4.svg' }, vivusCallback).reset().play(),
-		new Vivus('draw-test-2', { duration: 200, file: 'images/draw-test-2.svg' }, vivusCallback).reset(),
-		new Vivus('draw-test-3', { duration: 200, file: 'images/draw-test-3.svg' }, vivusCallback).reset(),
-		new Vivus('draw-test-4', { duration: 200, file: 'images/draw-test-4.svg' }, vivusCallback).reset(),
+		new Vivus('draw-test-1', { duration: 100, file: 'images/draw-test-4.svg' }, vivusCallback).reset().play(),
+		new Vivus('draw-test-2', { duration: 100, file: 'images/draw-test-2.svg' }, vivusCallback).reset(),
+		new Vivus('draw-test-3', { duration: 100, file: 'images/draw-test-3.svg' }, vivusCallback).reset(),
+		new Vivus('draw-test-4', { duration: 100, file: 'images/draw-test-4.svg' }, vivusCallback).reset(),
 	];
 
 	svgReady=true;
