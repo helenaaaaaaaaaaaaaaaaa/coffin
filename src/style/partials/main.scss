@@ -122,6 +122,7 @@ body {
 
 	&--active {
 		&::after {
+			visibility: hidden;
 			opacity: 0;
 		}
 	}
