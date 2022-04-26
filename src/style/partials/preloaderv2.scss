@@ -1,0 +1,51 @@
+
+$particles: 62; // has to match nodes in dom
+$particleSize: 8px;
+$radius: 80;
+//$lapDuration: 3s;
+$lapDuration: 7s;
+
+.preloader {
+	position: absolute;
+	z-index: 121;
+	top: 50%;
+	left: 50%;
+	-moz-perspective: 500px;
+	-webkit-perspective: 500px;
+	perspective: 500px;
+}
+
+.preloader i {
+	position: absolute;
+	display: block;
+	width: $particleSize;
+	height: $particleSize;
+	animation-name: spin;
+	animation-duration: $lapDuration;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	opacity: 0;
+	border-radius: $particleSize;
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+
+@for $i from 1 through $particles {
+	i:nth-child(#{$i}) {
+		$angle: ($i / $particles) * 720;
+		transform: rotate(#{$angle}deg) translate3d(#{$radius}px, 0, 0);
+		animation-delay: $i * ($lapDuration / $particles);
+	}
+}
+
+@keyframes spin {
+	0% {
+		opacity: 0.0;
+	}
+
+
+	100% {
+		transform: translate3d(-$particleSize/2, -$particleSize/2,  570px);
+		opacity: 0.6;
+	}
+}

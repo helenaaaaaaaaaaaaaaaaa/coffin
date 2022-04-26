@@ -1,0 +1,51 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+		var menu_item_4_additional_classes = 'menu__list-item--active'
+
+
+
+
+block main
+
+	// Quantity should be the same in Sass
+	- var quantity = 50
+	.firefly-wrap.firefly-wrap--other-pages
+		- for (var i = 1; i <= quantity; i++)
+			.firefly
+
+	section.contacts
+		.container.container--contacts
+			h1.contacts__title контАкты
+			.contacts-block
+				.contacts-left
+					h6.contacts-left__title Контактная информация
+					p.contacts-left__description Работаем круглосуточно
+					.contacts-item.contacts-item-first
+						.contacts-item__name Телефон:
+						.contacts-item__value +79182736812
+					.contacts-item
+						.contacts-item__name E-mail:
+						.contacts-item__value doroga@vnebo.com
+					.contacts-item.contacts-item-last
+						.contacts-item__name Адрес:
+						.contacts-item__value улица Пушкина, дом 7, <br class="no-mobile"> город Москва
+				.contacts-right
+					h6.contacts-right__title Остались вопросы?
+					p.contacts-right__description Наш менеджер свяжется с вами в&nbsp;ближайшее&nbsp;время
+					form.contacts-right__form
+						input.contacts-right__form-input(type="text" placeholder="Ваше имя")
+						input.contacts-right__form-input(type="tel" placeholder="Ваш телефон")
+					button.btn-v2-wrap
+						.btn-v2 Связаться с нами
+
+
+
+		.container.container--bottom-btn
+			button.btn
+				include ../images/btn-icon.svg
+				a.btn__text(href="/coffin/") На главную

@@ -1,0 +1,47 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+	style .site-header{display: none !important;}
+
+
+
+block main
+	.preloader-wrap.preloader-wrap--active
+		//video(loop="true" autoplay preload muted)
+			source(src="images/preloader-slow-7.mp4" type='video/mp4;')
+		.preloader
+			- var quantity = 62
+				- for (var i = 1; i <= quantity; i++)
+					i
+
+
+
+
+
+	//section.services
+		.container
+			h1.services__title услуги
+			.services__subtitle Возьмем на себя все хлопоты
+			.cards-wrap
+				.service-card
+					h3.service-card__title Перевозка тела и&nbsp;праха умершего
+					p.service-card__description Катафальные перевозки, как в пределах Москвы, так и связанные с&nbsp;организацией доставки груза 200 в другие города РФ.
+				.service-card
+					h3.service-card__title Оформление документов
+					p.service-card__description Любые другие виды похоронных услуг — оформление документов, бальзамирование, перевозка усопшего в морг, захоронение и др.
+				.service-card
+					h3.service-card__title Организация похорон
+					p.service-card__description Комплексная организация похорон, включающая в себя все виды помощи — от первой консультации до подготовки поминок.
+				.service-card
+					h3.service-card__title Подготовка умершего
+					p.service-card__description Обеспечиваем полную сохранность тела при длительных перевозках.
+		.container.container--bottom-btn
+			button.btn
+				include ../images/btn-icon.svg
+				a.btn__text(href="/coffin/") На главную
+

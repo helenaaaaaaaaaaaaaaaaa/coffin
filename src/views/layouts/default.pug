@@ -1,0 +1,64 @@
+doctype html
+-
+	var menu_item_1_additional_classes = ''
+	var menu_item_2_additional_classes = ''
+	var menu_item_3_additional_classes = ''
+	var menu_item_4_additional_classes = ''
+block vars
+include ../components/_mixins
+
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(name="description" content="")
+		meta(name="keywords" content="")
+		meta(property="og:image" content="images/logo.svg")
+		meta(name="format-detection" content="telephone=no")
+		link(href="css/main.css" rel="stylesheet")
+		script.
+			// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+			let vh = window.innerHeight * 0.01;
+			// Then we set the value in the --vh custom property to the root of the document
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+			// We listen to the resize event
+			window.addEventListener('resize', () => {
+			// We execute the same script as before
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+			});
+		</script>
+		//title= `${page.title}`
+
+	body
+		block header
+			include ../partials/_header
+
+		canvas.animated-bg#animated-bg
+
+		.promo--hidden
+			.promo-middle
+				.promo-content
+					.promo-header
+						span.promo-close x
+
+		main.main
+			block main
+
+		block footer
+			include ../partials/_footer
+
+		block modals
+
+
+		script(src="js/main.js")
+
+		.preloader-wrap.preloader-wrap--hidden
+			//.preloader
+				- var quantity = 62
+					- for (var i = 1; i <= quantity; i++)
+						i
+			video(loop="true" autoplay preload  muted)
+				source(src="images/preloader-slow-7.mp4" type='video/mp4;' mute)
+
+		block scripts

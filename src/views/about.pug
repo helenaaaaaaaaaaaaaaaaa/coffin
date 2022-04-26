@@ -1,0 +1,58 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+		var menu_item_2_additional_classes = 'menu__list-item--active'
+
+
+
+
+block main
+
+	// Quantity should be the same in Sass
+	- var quantity = 50
+	.firefly-wrap.firefly-wrap--other-pages
+		- for (var i = 1; i <= quantity; i++)
+			.firefly
+
+	section.about
+		.container
+			h1.about__title о нас
+			.about-info
+
+				.about-info-top
+					.about-info-top__item.about-info-top__item-img
+						img(src="images/about.jpg", alt="")
+					.about-info-top__item.about-info-top__item-2
+						p.about-info-top__item-text Бюро ритуальных услуг «Дорога в небо» — надежный помощник, который возьмет на себя все проблемы, связанные с организацией прощания.
+					.about-info-top__item.about-info-top__item-3
+						p.about-info-top__item-description Наша компания действует с 2007 года. За прошедшее время мы приобрели репутацию надежного агентства, в котором работают исключительно профессиональные, корректные и внимательные сотрудники.
+
+				.about-info-mid
+					.about-info-mid__item.about-info-mid__item-1
+						h3.about-info-mid__item-title >17000
+						p.about-info-mid__item-subtitle клиентов получили нашу помощь
+					.about-info-mid__item.about-info-mid__item-2
+						h3.about-info-mid__item-title 2007 год
+						p.about-info-mid__item-subtitle опыт нашей компании 15 лет
+					.about-info-mid__item.about-info-mid__item-3
+						h3.about-info-mid__item-title.about-info-mid__item-title-3 Приятный прайс
+						p.about-info-mid__item-subtitle лучшие цены на наши услуги
+
+				.about-info-bottom
+					.about-info-bottom__item
+						p.about-info-bottom__item-text Оказание ритуальных услуг — основное направление деятельности нашего бюро, поэтому мы располагаем всеми необходимыми ресурсами. Наши специалисты готовы включиться в подготовку траурной церемонии на любом этапе, чтобы обеспечить полное или частичное ее сопровождение.
+
+					.about-info-bottom__item
+						p.about-info-bottom__item-text Ответственно подойдя к вопросу ценообразования, мы провели анализ рынка, а также оптимизировали внутренние процессы в компании. Это позволяет нам поддерживать оптимальную стоимость ритуальных услуг. <b> Более того!</b> Часть работ мы выполняем бесплатно, например, вам не придется платить за консультационную поддержку и выезд агента.
+					.about-info-bottom__item
+						p.about-info-bottom__item-text Мы готовы полностью освободить вас от организационных хлопот и обеспечить прощание с усопшим, как в рамках его вероисповедания, так и по гражданским канонам. Репутация компании является лучшим гарантом того, что траурная церемония пройдет достойно.
+
+
+		.container.container--bottom-btn
+			button.btn
+				include ../images/btn-icon.svg
+				a.btn__text(href="/coffin/") На главную

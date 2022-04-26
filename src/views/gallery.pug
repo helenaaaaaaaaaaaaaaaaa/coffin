@@ -1,0 +1,47 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+		var menu_item_3_additional_classes = 'menu__list-item--active'
+
+
+
+
+block main
+
+	// Quantity should be the same in Sass
+	- var quantity = 50
+	.firefly-wrap.firefly-wrap--other-pages
+		- for (var i = 1; i <= quantity; i++)
+			.firefly
+
+	section.gallery
+		.container
+			h1.gallery__title галерея
+
+			.gallery-box-wrapper
+				.gallery-box
+					.gallery-box__col.gallery-box__col-left
+						.gallery-box__item.gallery-box__item-1
+							img(src="images/gallery/img-1.jpg", alt="")
+					.gallery-box__col.gallery-box__col-right
+						.gallery-box__row
+							.gallery-box__item.gallery-box__item-2
+								img.gallery-img(src="images/gallery/img-2.jpg", alt="")
+							.gallery-box__item.gallery-box__item-3
+								img.gallery-img(src="images/gallery/img-3.jpg", alt="")
+						.gallery-box__row.gallery-box__row--hidden
+							.gallery-box__item.gallery-box__item-4
+								img.gallery-img(src="images/gallery/img-4.jpg", alt="")
+							.gallery-box__item.gallery-box__item-5
+								img.gallery-img(src="images/gallery/img-5.jpg", alt="")
+
+
+
+		.container.container--bottom-btn
+			button.btn
+				include ../images/btn-icon.svg
+				a.btn__text(href="/coffin/") На главную

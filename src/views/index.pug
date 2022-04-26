@@ -1,0 +1,197 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+
+	#pagepiling
+		.pppage.section
+			.pppage__inner.pppage__inner--active
+				section.promo
+					.promo-decorations
+						include ../images/dec-ellipse.svg
+						.promo-images
+							.promo-images-item(style="width: 88.625%;")
+								img(src="images/grob.png", alt="")
+								#draw-1
+							//
+								.promo-images-item(style="width: 88.5%;")
+									img(src="images/grob2.png", alt="")
+								.promo-images-item(style="width: 76.75%;")
+									img(src="images/grob3.png", alt="")
+								.promo-images-item(style="width: 86.125%;")
+									img(src="images/grob4.png", alt="")
+						// Quantity should be the same in Sass
+						- var quantity = 50
+						.firefly-wrap.firefly-wrap--homepage
+							- for (var i = 1; i <= quantity; i++)
+								.firefly
+
+					.container.container--promo
+						.promo__info
+							h1.promo__title ДОРОГа <br> В НеБО
+							.promo__subtitle Жемчужный свет по дороге в небо. <br> The pearl light up the way to heaven
+							//button.promo__btn.btn Связаться с нами
+							.btn-v2-wrap
+								.btn-v2 Связаться с нами
+							.promo-bottom
+								.promo-bottom-item
+									.promo-bottom-item__val 15 лет
+									.promo-bottom-item__desc мы достойно провожаем людей
+
+								.promo-bottom-item
+									.promo-bottom-item__val 17000+
+									.promo-bottom-item__desc покойных были транспортированы
+
+		.pppage.section
+			.pppage__inner
+				section.promo
+					.promo-decorations
+						include ../images/dec-ellipse.svg
+						.promo-images
+							//.promo-images-item(style="width: 88.625%;")
+								img(src="images/grob.png", alt="")
+
+							.promo-images-item(style="width: 88.5%;")
+								img(src="images/grob2.png", alt="")
+								#draw-2
+							//	.promo-images-item(style="width: 76.75%;")
+									img(src="images/grob3.png", alt="")
+								.promo-images-item(style="width: 86.125%;")
+									img(src="images/grob4.png", alt="")
+						// Quantity should be the same in Sass
+						- var quantity = 50
+						.firefly-wrap.firefly-wrap--homepage
+							- for (var i = 1; i <= quantity; i++)
+								.firefly
+
+					.container.container--promo
+						.promo__info
+							h1.promo__title ДОРОГа <br> В НеБО
+							.promo__subtitle Жемчужный свет по дороге в небо. <br> The pearl light up the way to heaven
+							//button.promo__btn.btn Связаться с нами
+							.btn-v2-wrap
+								.btn-v2 Связаться с нами
+							.promo-bottom
+								.promo-bottom-item
+									.promo-bottom-item__val 15 лет
+									.promo-bottom-item__desc мы достойно провожаем людей
+
+								.promo-bottom-item
+									.promo-bottom-item__val Провожаем
+									.promo-bottom-item__desc с уважением и почестями
+
+		.pppage.section
+			.pppage__inner
+				section.promo
+					.promo-decorations
+						include ../images/dec-ellipse.svg
+						.promo-images
+							//.promo-images-item(style="width: 88.625%;")
+								img(src="images/grob.png", alt="")
+
+								.promo-images-item(style="width: 88.5%;")
+									img(src="images/grob2.png", alt="")
+							.promo-images-item(style="width: 76.75%;")
+								img(src="images/grob3.png", alt="")
+								#draw-3
+							//	.promo-images-item(style="width: 86.125%;")
+									img(src="images/grob4.png", alt="")
+						// Quantity should be the same in Sass
+						- var quantity = 50
+						.firefly-wrap.firefly-wrap--homepage
+							- for (var i = 1; i <= quantity; i++)
+								.firefly
+
+					.container.container--promo
+						.promo__info
+							h1.promo__title ДОРОГа <br> В НеБО
+							.promo__subtitle Жемчужный свет по дороге в небо. <br> The pearl light up the way to heaven
+							//button.promo__btn.btn Связаться с нами
+							.btn-v2-wrap
+								.btn-v2 Связаться с нами
+							.promo-bottom
+								.promo-bottom-item
+									.promo-bottom-item__val 15 лет
+									.promo-bottom-item__desc мы достойно провожаем людей
+
+								.promo-bottom-item
+									.promo-bottom-item__val Провожаем
+									.promo-bottom-item__desc с уважением и почестями
+
+		.pppage.section
+			.pppage__inner
+				section.promo
+					.promo-decorations
+						include ../images/dec-ellipse.svg
+						.promo-images
+							//.promo-images-item(style="width: 88.625%;")
+								img(src="images/grob.png", alt="")
+							//
+								.promo-images-item(style="width: 88.5%;")
+									img(src="images/grob2.png", alt="")
+								.promo-images-item(style="width: 76.75%;")
+									img(src="images/grob3.png", alt="")
+							.promo-images-item(style="width: 86.125%;")
+								img(src="images/grob4.png", alt="")
+								#draw-4
+						// Quantity should be the same in Sass
+						- var quantity = 50
+						.firefly-wrap.firefly-wrap--homepage
+							- for (var i = 1; i <= quantity; i++)
+								.firefly
+
+					.container.container--promo
+						.promo__info
+							h1.promo__title ДОРОГа <br> В НеБО
+							.promo__subtitle Жемчужный свет по дороге в небо. <br> The pearl light up the way to heaven
+							//button.promo__btn.btn Связаться с нами
+							.btn-v2-wrap
+								.btn-v2 Связаться с нами
+							.promo-bottom
+								.promo-bottom-item
+									.promo-bottom-item__val 15 лет
+									.promo-bottom-item__desc мы достойно провожаем людей
+
+								.promo-bottom-item
+									.promo-bottom-item__val Провожаем
+									.promo-bottom-item__desc с уважением и почестями
+
+	.screen-switch
+		a.screen-switch__item.screen-switch__item--active(href="#page1" data-menuanchor="page1")
+		a.screen-switch__item( href="#page2" data-menuanchor="page2")
+		a.screen-switch__item( href="#page3" data-menuanchor="page3")
+		a.screen-switch__item( href="#page4" data-menuanchor="page4")
+
+
+
+
+	//section.services
+		.container
+			h1.services__title услуги
+			.services__subtitle Возьмем на себя все хлопоты
+			.cards-wrap
+				.service-card
+					h3.service-card__title Перевозка тела и&nbsp;праха умершего
+					p.service-card__description Катафальные перевозки, как в пределах Москвы, так и связанные с&nbsp;организацией доставки груза 200 в другие города РФ.
+				.service-card
+					h3.service-card__title Оформление документов
+					p.service-card__description Любые другие виды похоронных услуг — оформление документов, бальзамирование, перевозка усопшего в морг, захоронение и др.
+				.service-card
+					h3.service-card__title Организация похорон
+					p.service-card__description Комплексная организация похорон, включающая в себя все виды помощи — от первой консультации до подготовки поминок.
+				.service-card
+					h3.service-card__title Подготовка умершего
+					p.service-card__description Обеспечиваем полную сохранность тела при длительных перевозках.
+		.container.container--bottom-btn
+			button.btn
+				include ../images/btn-icon.svg
+				.btn__text На главную
+

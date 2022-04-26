@@ -1,0 +1,48 @@
+@media screen and (max-width: 970px) {
+  section {
+    height: 812px;
+  }
+  .container {
+    width: 323px;
+  }
+  .services__title {
+    font-size: 47px;
+    margin-left: -6px;
+  }
+  .services__subtitle {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .cards-wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-left: -23px;
+  }
+  .service-card {
+    width: -webkit-calc(50% - 23px);
+    width: -moz-calc(50% - 23px);
+    width: calc(50% - 23px);
+    margin-left: 23px;
+    padding: 45px 11px;
+    margin-bottom: 21px;
+    -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+            border-radius: 15px;
+  }
+  .service-card__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .service-card__description {
+    margin-top: 14px;
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .btn {
+    margin-bottom: 35px;
+  }
+}
+/*# sourceMappingURL=main-adaptive.css.map */
